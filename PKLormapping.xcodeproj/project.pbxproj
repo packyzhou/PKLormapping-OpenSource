@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E47B7E71B3A79B60084A758 /* PKDataAccessDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E47B7E61B3A79B60084A758 /* PKDataAccessDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E47B7E91B3A79F90084A758 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E47B7E81B3A79F90084A758 /* libsqlite3.dylib */; };
+		8E575B711B3E9DF500FDA80E /* PKMultipleEntityBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E575B6D1B3E9DF500FDA80E /* PKMultipleEntityBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E575B721B3E9DF500FDA80E /* PKArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E575B6E1B3E9DF500FDA80E /* PKArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E575B731B3E9DF500FDA80E /* PKArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E575B6F1B3E9DF500FDA80E /* PKArray.m */; };
+		8E575B741B3E9DF500FDA80E /* PKMultipleEntityBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E575B701B3E9DF500FDA80E /* PKMultipleEntityBean.m */; };
+		8E68AE5B1B352001002F7F77 /* PKLormapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE5A1B352001002F7F77 /* PKLormapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E68AE621B352001002F7F77 /* PKLormapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E68AE571B352001002F7F77 /* PKLormapping.framework */; };
+		8E68AE671B352001002F7F77 /* PKLormappingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AE661B352001002F7F77 /* PKLormappingTests.m */; };
+		8E68AE791B352185002F7F77 /* PKHQLer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE771B352185002F7F77 /* PKHQLer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E68AE7A1B352185002F7F77 /* PKHQLer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AE781B352185002F7F77 /* PKHQLer.m */; };
+		8E68AE811B3537B9002F7F77 /* PKQueryPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE7F1B3537B9002F7F77 /* PKQueryPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E68AE821B3537B9002F7F77 /* PKQueryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AE801B3537B9002F7F77 /* PKQueryPage.m */; };
+		8E68AE941B359121002F7F77 /* PKBaseEntityCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE921B359121002F7F77 /* PKBaseEntityCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E68AE951B359121002F7F77 /* PKBaseEntityCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68AE931B359121002F7F77 /* PKBaseEntityCategory.m */; };
+		8E85ACDE1B394AC500D6CE9A /* PKCharacterOperate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E85ACDC1B394AC500D6CE9A /* PKCharacterOperate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E85ACDF1B394AC500D6CE9A /* PKCharacterOperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85ACDD1B394AC500D6CE9A /* PKCharacterOperate.m */; };
+		8E85ACE61B39726000D6CE9A /* PKClassBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E85ACE41B39726000D6CE9A /* PKClassBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E85ACE71B39726000D6CE9A /* PKClassBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85ACE51B39726000D6CE9A /* PKClassBean.m */; };
+		8E85ACEA1B3973B700D6CE9A /* PKTableBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E85ACE81B3973B700D6CE9A /* PKTableBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E85ACEB1B3973B700D6CE9A /* PKTableBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85ACE91B3973B700D6CE9A /* PKTableBean.m */; };
+		8EECB2E01B3D532100BEBC19 /* PKUnitCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2DE1B3D532100BEBC19 /* PKUnitCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2E11B3D532100BEBC19 /* PKUnitCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2DF1B3D532100BEBC19 /* PKUnitCommon.m */; };
+		8EECB2E51B3D540500BEBC19 /* PKSQLiteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2E21B3D540500BEBC19 /* PKSQLiteProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2E61B3D540500BEBC19 /* PKMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2E31B3D540500BEBC19 /* PKMappingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2E71B3D540500BEBC19 /* PKAccessThreadProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2E41B3D540500BEBC19 /* PKAccessThreadProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2EA1B3D542300BEBC19 /* PKMappingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2E81B3D542300BEBC19 /* PKMappingCategory.m */; };
+		8EECB2EB1B3D542300BEBC19 /* PKMappingCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2E91B3D542300BEBC19 /* PKMappingCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2F01B3D543200BEBC19 /* PKAccessThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2EC1B3D543200BEBC19 /* PKAccessThread.m */; };
+		8EECB2F11B3D543200BEBC19 /* PKAccessThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2ED1B3D543200BEBC19 /* PKAccessThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2F21B3D543200BEBC19 /* PKAccessTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2EE1B3D543200BEBC19 /* PKAccessTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2F31B3D543200BEBC19 /* PKAccessTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2EF1B3D543200BEBC19 /* PKAccessTarget.m */; };
+		8EECB2F61B3D543D00BEBC19 /* PKMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2F41B3D543D00BEBC19 /* PKMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2F71B3D543D00BEBC19 /* PKMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2F51B3D543D00BEBC19 /* PKMapping.m */; };
+		8EECB2FB1B3D545C00BEBC19 /* PKSQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EECB2F91B3D545C00BEBC19 /* PKSQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB2FC1B3D545C00BEBC19 /* PKSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EECB2FA1B3D545C00BEBC19 /* PKSQLite.m */; };
+		8EECB33B1B3D5F0900BEBC19 /* PKHQLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE851B35386E002F7F77 /* PKHQLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EECB33C1B3D5F0900BEBC19 /* PKEntityProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E68AE861B3538AF002F7F77 /* PKEntityProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF716B81B5BE0AC00CE7523 /* PKLormappingSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF716B71B5BE0AC00CE7523 /* PKLormappingSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF716BE1B5BE0AD00CE7523 /* PKLormappingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF716B31B5BE0AC00CE7523 /* PKLormappingSwift.framework */; };
+		8EF716C51B5BE0AD00CE7523 /* PKLormappingSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716C41B5BE0AD00CE7523 /* PKLormappingSwiftTests.swift */; };
+		8EF716D31B5BE16100CE7523 /* PKQueryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D11B5BE16100CE7523 /* PKQueryPage.swift */; };
+		8EF716D41B5BE16100CE7523 /* PKHQLer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D21B5BE16100CE7523 /* PKHQLer.swift */; };
+		8EF716D91B5BE16B00CE7523 /* PKMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D51B5BE16B00CE7523 /* PKMapping.swift */; };
+		8EF716DA1B5BE16B00CE7523 /* PKArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D61B5BE16B00CE7523 /* PKArray.swift */; };
+		8EF716DB1B5BE16B00CE7523 /* PKExtensionCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D71B5BE16B00CE7523 /* PKExtensionCommon.swift */; };
+		8EF716DC1B5BE16B00CE7523 /* PKDateUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716D81B5BE16B00CE7523 /* PKDateUnit.swift */; };
+		8EF716DE1B5BE17900CE7523 /* PKMapAttributeBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716DD1B5BE17900CE7523 /* PKMapAttributeBean.swift */; };
+		8EF716E01B5BE19000CE7523 /* PKCharacterOperate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716DF1B5BE19000CE7523 /* PKCharacterOperate.swift */; };
+		8EF716E21B5BE19800CE7523 /* PKDataBaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716E11B5BE19800CE7523 /* PKDataBaseAccess.swift */; };
+		8EF716E41B5BE19E00CE7523 /* PKSQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF716E31B5BE19E00CE7523 /* PKSQLite.swift */; };
+		8EF716E51B5BE1E800CE7523 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E47B7E81B3A79F90084A758 /* libsqlite3.dylib */; };
+		8EF7171D1B5BFCB400CE7523 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF7171C1B5BFCB400CE7523 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E68AE631B352001002F7F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E68AE4E1B352001002F7F77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E68AE561B352001002F7F77;
+			remoteInfo = PKLormapping;
+		};
+		8EF716BF1B5BE0AD00CE7523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E68AE4E1B352001002F7F77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF716B21B5BE0AC00CE7523;
+			remoteInfo = PKLormappingSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E47B7E61B3A79B60084A758 /* PKDataAccessDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKDataAccessDelegate.h; sourceTree = "<group>"; };
+		8E47B7E81B3A79F90084A758 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8E575B6D1B3E9DF500FDA80E /* PKMultipleEntityBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMultipleEntityBean.h; sourceTree = "<group>"; };
+		8E575B6E1B3E9DF500FDA80E /* PKArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKArray.h; sourceTree = "<group>"; };
+		8E575B6F1B3E9DF500FDA80E /* PKArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKArray.m; sourceTree = "<group>"; };
+		8E575B701B3E9DF500FDA80E /* PKMultipleEntityBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMultipleEntityBean.m; sourceTree = "<group>"; };
+		8E68AE571B352001002F7F77 /* PKLormapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PKLormapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E68AE5A1B352001002F7F77 /* PKLormapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLormapping.h; sourceTree = "<group>"; };
+		8E68AE5C1B352001002F7F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E68AE611B352001002F7F77 /* PKLormappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKLormappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E68AE661B352001002F7F77 /* PKLormappingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLormappingTests.m; sourceTree = "<group>"; };
+		8E68AE681B352001002F7F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E68AE771B352185002F7F77 /* PKHQLer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKHQLer.h; sourceTree = "<group>"; };
+		8E68AE781B352185002F7F77 /* PKHQLer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKHQLer.m; sourceTree = "<group>"; };
+		8E68AE7F1B3537B9002F7F77 /* PKQueryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKQueryPage.h; sourceTree = "<group>"; };
+		8E68AE801B3537B9002F7F77 /* PKQueryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKQueryPage.m; sourceTree = "<group>"; };
+		8E68AE851B35386E002F7F77 /* PKHQLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKHQLProtocol.h; sourceTree = "<group>"; };
+		8E68AE861B3538AF002F7F77 /* PKEntityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKEntityProtocol.h; sourceTree = "<group>"; };
+		8E68AE921B359121002F7F77 /* PKBaseEntityCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKBaseEntityCategory.h; sourceTree = "<group>"; };
+		8E68AE931B359121002F7F77 /* PKBaseEntityCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKBaseEntityCategory.m; sourceTree = "<group>"; };
+		8E85ACDC1B394AC500D6CE9A /* PKCharacterOperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCharacterOperate.h; sourceTree = "<group>"; };
+		8E85ACDD1B394AC500D6CE9A /* PKCharacterOperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCharacterOperate.m; sourceTree = "<group>"; };
+		8E85ACE41B39726000D6CE9A /* PKClassBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKClassBean.h; sourceTree = "<group>"; };
+		8E85ACE51B39726000D6CE9A /* PKClassBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKClassBean.m; sourceTree = "<group>"; };
+		8E85ACE81B3973B700D6CE9A /* PKTableBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKTableBean.h; sourceTree = "<group>"; };
+		8E85ACE91B3973B700D6CE9A /* PKTableBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKTableBean.m; sourceTree = "<group>"; };
+		8EECB2DE1B3D532100BEBC19 /* PKUnitCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKUnitCommon.h; sourceTree = "<group>"; };
+		8EECB2DF1B3D532100BEBC19 /* PKUnitCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKUnitCommon.m; sourceTree = "<group>"; };
+		8EECB2E21B3D540500BEBC19 /* PKSQLiteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSQLiteProtocol.h; sourceTree = "<group>"; };
+		8EECB2E31B3D540500BEBC19 /* PKMappingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMappingProtocol.h; sourceTree = "<group>"; };
+		8EECB2E41B3D540500BEBC19 /* PKAccessThreadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAccessThreadProtocol.h; sourceTree = "<group>"; };
+		8EECB2E81B3D542300BEBC19 /* PKMappingCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMappingCategory.m; sourceTree = "<group>"; };
+		8EECB2E91B3D542300BEBC19 /* PKMappingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMappingCategory.h; sourceTree = "<group>"; };
+		8EECB2EC1B3D543200BEBC19 /* PKAccessThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAccessThread.m; sourceTree = "<group>"; };
+		8EECB2ED1B3D543200BEBC19 /* PKAccessThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAccessThread.h; sourceTree = "<group>"; };
+		8EECB2EE1B3D543200BEBC19 /* PKAccessTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAccessTarget.h; sourceTree = "<group>"; };
+		8EECB2EF1B3D543200BEBC19 /* PKAccessTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAccessTarget.m; sourceTree = "<group>"; };
+		8EECB2F41B3D543D00BEBC19 /* PKMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKMapping.h; sourceTree = "<group>"; };
+		8EECB2F51B3D543D00BEBC19 /* PKMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKMapping.m; sourceTree = "<group>"; };
+		8EECB2F91B3D545C00BEBC19 /* PKSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSQLite.h; sourceTree = "<group>"; };
+		8EECB2FA1B3D545C00BEBC19 /* PKSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSQLite.m; sourceTree = "<group>"; };
+		8EF716B31B5BE0AC00CE7523 /* PKLormappingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PKLormappingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF716B61B5BE0AC00CE7523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF716B71B5BE0AC00CE7523 /* PKLormappingSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLormappingSwift.h; sourceTree = "<group>"; };
+		8EF716BD1B5BE0AD00CE7523 /* PKLormappingSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKLormappingSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF716C31B5BE0AD00CE7523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF716C41B5BE0AD00CE7523 /* PKLormappingSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKLormappingSwiftTests.swift; sourceTree = "<group>"; };
+		8EF716D11B5BE16100CE7523 /* PKQueryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKQueryPage.swift; sourceTree = "<group>"; };
+		8EF716D21B5BE16100CE7523 /* PKHQLer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHQLer.swift; sourceTree = "<group>"; };
+		8EF716D51B5BE16B00CE7523 /* PKMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKMapping.swift; sourceTree = "<group>"; };
+		8EF716D61B5BE16B00CE7523 /* PKArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKArray.swift; sourceTree = "<group>"; };
+		8EF716D71B5BE16B00CE7523 /* PKExtensionCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKExtensionCommon.swift; sourceTree = "<group>"; };
+		8EF716D81B5BE16B00CE7523 /* PKDateUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKDateUnit.swift; sourceTree = "<group>"; };
+		8EF716DD1B5BE17900CE7523 /* PKMapAttributeBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKMapAttributeBean.swift; sourceTree = "<group>"; };
+		8EF716DF1B5BE19000CE7523 /* PKCharacterOperate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCharacterOperate.swift; sourceTree = "<group>"; };
+		8EF716E11B5BE19800CE7523 /* PKDataBaseAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKDataBaseAccess.swift; sourceTree = "<group>"; };
+		8EF716E31B5BE19E00CE7523 /* PKSQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKSQLite.swift; sourceTree = "<group>"; };
+		8EF7171C1B5BFCB400CE7523 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E68AE531B352001002F7F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E47B7E91B3A79F90084A758 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E68AE5E1B352001002F7F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E68AE621B352001002F7F77 /* PKLormapping.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716AF1B5BE0AC00CE7523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF716E51B5BE1E800CE7523 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716BA1B5BE0AD00CE7523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF716BE1B5BE0AD00CE7523 /* PKLormappingSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E68AE4D1B352001002F7F77 = {
+			isa = PBXGroup;
+			children = (
+				8E47B7E81B3A79F90084A758 /* libsqlite3.dylib */,
+				8E68AE591B352001002F7F77 /* PKLormapping */,
+				8E68AE651B352001002F7F77 /* PKLormappingTests */,
+				8EF716B41B5BE0AC00CE7523 /* PKLormappingSwift */,
+				8EF716C11B5BE0AD00CE7523 /* PKLormappingSwiftTests */,
+				8E68AE581B352001002F7F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E68AE581B352001002F7F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AE571B352001002F7F77 /* PKLormapping.framework */,
+				8E68AE611B352001002F7F77 /* PKLormappingTests.xctest */,
+				8EF716B31B5BE0AC00CE7523 /* PKLormappingSwift.framework */,
+				8EF716BD1B5BE0AD00CE7523 /* PKLormappingSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E68AE591B352001002F7F77 /* PKLormapping */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2F81B3D544D00BEBC19 /* sql */,
+				8E68AE8C1B358FAA002F7F77 /* common */,
+				8E68AE871B358C39002F7F77 /* test */,
+				8E68AE7C1B3523B4002F7F77 /* protocal */,
+				8E68AE751B3520E6002F7F77 /* Extra */,
+				8E68AE731B352073002F7F77 /* Access */,
+				8E68AE721B352064002F7F77 /* Mapping */,
+				8E68AE711B35202A002F7F77 /* HQL */,
+				8E68AE5A1B352001002F7F77 /* PKLormapping.h */,
+				8E68AE5C1B352001002F7F77 /* Info.plist */,
+			);
+			path = PKLormapping;
+			sourceTree = "<group>";
+		};
+		8E68AE651B352001002F7F77 /* PKLormappingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AE661B352001002F7F77 /* PKLormappingTests.m */,
+				8E68AE681B352001002F7F77 /* Info.plist */,
+			);
+			path = PKLormappingTests;
+			sourceTree = "<group>";
+		};
+		8E68AE711B35202A002F7F77 /* HQL */ = {
+			isa = PBXGroup;
+			children = (
+				8E68AE771B352185002F7F77 /* PKHQLer.h */,
+				8E68AE781B352185002F7F77 /* PKHQLer.m */,
+			);
+			name = HQL;
+			sourceTree = "<group>";
+		};
+		8E68AE721B352064002F7F77 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2F41B3D543D00BEBC19 /* PKMapping.h */,
+				8EECB2F51B3D543D00BEBC19 /* PKMapping.m */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		8E68AE731B352073002F7F77 /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2EC1B3D543200BEBC19 /* PKAccessThread.m */,
+				8EECB2ED1B3D543200BEBC19 /* PKAccessThread.h */,
+				8EECB2EE1B3D543200BEBC19 /* PKAccessTarget.h */,
+				8EECB2EF1B3D543200BEBC19 /* PKAccessTarget.m */,
+			);
+			name = Access;
+			sourceTree = "<group>";
+		};
+		8E68AE751B3520E6002F7F77 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2E81B3D542300BEBC19 /* PKMappingCategory.m */,
+				8EECB2E91B3D542300BEBC19 /* PKMappingCategory.h */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		8E68AE7C1B3523B4002F7F77 /* protocal */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2E21B3D540500BEBC19 /* PKSQLiteProtocol.h */,
+				8EECB2E31B3D540500BEBC19 /* PKMappingProtocol.h */,
+				8EECB2E41B3D540500BEBC19 /* PKAccessThreadProtocol.h */,
+				8E47B7E61B3A79B60084A758 /* PKDataAccessDelegate.h */,
+				8E68AE851B35386E002F7F77 /* PKHQLProtocol.h */,
+				8E68AE861B3538AF002F7F77 /* PKEntityProtocol.h */,
+			);
+			name = protocal;
+			sourceTree = "<group>";
+		};
+		8E68AE871B358C39002F7F77 /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		8E68AE8C1B358FAA002F7F77 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2DE1B3D532100BEBC19 /* PKUnitCommon.h */,
+				8EECB2DF1B3D532100BEBC19 /* PKUnitCommon.m */,
+				8E85ACE31B39723500D6CE9A /* bean */,
+				8E68AE7F1B3537B9002F7F77 /* PKQueryPage.h */,
+				8E68AE801B3537B9002F7F77 /* PKQueryPage.m */,
+				8E68AE921B359121002F7F77 /* PKBaseEntityCategory.h */,
+				8E68AE931B359121002F7F77 /* PKBaseEntityCategory.m */,
+				8E85ACDC1B394AC500D6CE9A /* PKCharacterOperate.h */,
+				8E85ACDD1B394AC500D6CE9A /* PKCharacterOperate.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		8E85ACE31B39723500D6CE9A /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				8E575B6D1B3E9DF500FDA80E /* PKMultipleEntityBean.h */,
+				8E575B6E1B3E9DF500FDA80E /* PKArray.h */,
+				8E575B6F1B3E9DF500FDA80E /* PKArray.m */,
+				8E575B701B3E9DF500FDA80E /* PKMultipleEntityBean.m */,
+				8E85ACE41B39726000D6CE9A /* PKClassBean.h */,
+				8E85ACE51B39726000D6CE9A /* PKClassBean.m */,
+				8E85ACE81B3973B700D6CE9A /* PKTableBean.h */,
+				8E85ACE91B3973B700D6CE9A /* PKTableBean.m */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
+		8EECB2F81B3D544D00BEBC19 /* sql */ = {
+			isa = PBXGroup;
+			children = (
+				8EECB2F91B3D545C00BEBC19 /* PKSQLite.h */,
+				8EECB2FA1B3D545C00BEBC19 /* PKSQLite.m */,
+			);
+			name = sql;
+			sourceTree = "<group>";
+		};
+		8EF716B41B5BE0AC00CE7523 /* PKLormappingSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716D01B5BE11F00CE7523 /* HQL */,
+				8EF716CF1B5BE10600CE7523 /* Common */,
+				8EF716CE1B5BE0FF00CE7523 /* Access */,
+				8EF716CD1B5BE0FA00CE7523 /* Mapping */,
+				8EF716CC1B5BE0F200CE7523 /* SQL */,
+				8EF716B71B5BE0AC00CE7523 /* PKLormappingSwift.h */,
+				8EF716B51B5BE0AC00CE7523 /* Supporting Files */,
+			);
+			path = PKLormappingSwift;
+			sourceTree = "<group>";
+		};
+		8EF716B51B5BE0AC00CE7523 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716B61B5BE0AC00CE7523 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EF716C11B5BE0AD00CE7523 /* PKLormappingSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716C41B5BE0AD00CE7523 /* PKLormappingSwiftTests.swift */,
+				8EF716C21B5BE0AD00CE7523 /* Supporting Files */,
+			);
+			path = PKLormappingSwiftTests;
+			sourceTree = "<group>";
+		};
+		8EF716C21B5BE0AD00CE7523 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716C31B5BE0AD00CE7523 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EF716CC1B5BE0F200CE7523 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				8EF7171C1B5BFCB400CE7523 /* sqlite3.h */,
+				8EF716E31B5BE19E00CE7523 /* PKSQLite.swift */,
+			);
+			name = SQL;
+			sourceTree = "<group>";
+		};
+		8EF716CD1B5BE0FA00CE7523 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716DD1B5BE17900CE7523 /* PKMapAttributeBean.swift */,
+				8EF716D51B5BE16B00CE7523 /* PKMapping.swift */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		8EF716CE1B5BE0FF00CE7523 /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716E11B5BE19800CE7523 /* PKDataBaseAccess.swift */,
+			);
+			name = Access;
+			sourceTree = "<group>";
+		};
+		8EF716CF1B5BE10600CE7523 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716DF1B5BE19000CE7523 /* PKCharacterOperate.swift */,
+				8EF716D61B5BE16B00CE7523 /* PKArray.swift */,
+				8EF716D71B5BE16B00CE7523 /* PKExtensionCommon.swift */,
+				8EF716D81B5BE16B00CE7523 /* PKDateUnit.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		8EF716D01B5BE11F00CE7523 /* HQL */ = {
+			isa = PBXGroup;
+			children = (
+				8EF716D11B5BE16100CE7523 /* PKQueryPage.swift */,
+				8EF716D21B5BE16100CE7523 /* PKHQLer.swift */,
+			);
+			name = HQL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E68AE541B352001002F7F77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EECB2E01B3D532100BEBC19 /* PKUnitCommon.h in Headers */,
+				8E68AE811B3537B9002F7F77 /* PKQueryPage.h in Headers */,
+				8E85ACDE1B394AC500D6CE9A /* PKCharacterOperate.h in Headers */,
+				8E68AE791B352185002F7F77 /* PKHQLer.h in Headers */,
+				8EECB2F21B3D543200BEBC19 /* PKAccessTarget.h in Headers */,
+				8E85ACEA1B3973B700D6CE9A /* PKTableBean.h in Headers */,
+				8EECB2E71B3D540500BEBC19 /* PKAccessThreadProtocol.h in Headers */,
+				8EECB2E61B3D540500BEBC19 /* PKMappingProtocol.h in Headers */,
+				8EECB2F61B3D543D00BEBC19 /* PKMapping.h in Headers */,
+				8E85ACE61B39726000D6CE9A /* PKClassBean.h in Headers */,
+				8EECB2EB1B3D542300BEBC19 /* PKMappingCategory.h in Headers */,
+				8EECB2E51B3D540500BEBC19 /* PKSQLiteProtocol.h in Headers */,
+				8EECB33B1B3D5F0900BEBC19 /* PKHQLProtocol.h in Headers */,
+				8EECB33C1B3D5F0900BEBC19 /* PKEntityProtocol.h in Headers */,
+				8E575B711B3E9DF500FDA80E /* PKMultipleEntityBean.h in Headers */,
+				8E575B721B3E9DF500FDA80E /* PKArray.h in Headers */,
+				8E68AE941B359121002F7F77 /* PKBaseEntityCategory.h in Headers */,
+				8E47B7E71B3A79B60084A758 /* PKDataAccessDelegate.h in Headers */,
+				8EECB2FB1B3D545C00BEBC19 /* PKSQLite.h in Headers */,
+				8EECB2F11B3D543200BEBC19 /* PKAccessThread.h in Headers */,
+				8E68AE5B1B352001002F7F77 /* PKLormapping.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716B01B5BE0AC00CE7523 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF7171D1B5BFCB400CE7523 /* sqlite3.h in Headers */,
+				8EF716B81B5BE0AC00CE7523 /* PKLormappingSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8E68AE561B352001002F7F77 /* PKLormapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E68AE6B1B352001002F7F77 /* Build configuration list for PBXNativeTarget "PKLormapping" */;
+			buildPhases = (
+				8E68AE521B352001002F7F77 /* Sources */,
+				8E68AE531B352001002F7F77 /* Frameworks */,
+				8E68AE541B352001002F7F77 /* Headers */,
+				8E68AE551B352001002F7F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PKLormapping;
+			productName = PKLormapping;
+			productReference = 8E68AE571B352001002F7F77 /* PKLormapping.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E68AE601B352001002F7F77 /* PKLormappingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E68AE6E1B352001002F7F77 /* Build configuration list for PBXNativeTarget "PKLormappingTests" */;
+			buildPhases = (
+				8E68AE5D1B352001002F7F77 /* Sources */,
+				8E68AE5E1B352001002F7F77 /* Frameworks */,
+				8E68AE5F1B352001002F7F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E68AE641B352001002F7F77 /* PBXTargetDependency */,
+			);
+			name = PKLormappingTests;
+			productName = PKLormappingTests;
+			productReference = 8E68AE611B352001002F7F77 /* PKLormappingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EF716B21B5BE0AC00CE7523 /* PKLormappingSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF716CA1B5BE0AD00CE7523 /* Build configuration list for PBXNativeTarget "PKLormappingSwift" */;
+			buildPhases = (
+				8EF716AE1B5BE0AC00CE7523 /* Sources */,
+				8EF716AF1B5BE0AC00CE7523 /* Frameworks */,
+				8EF716B01B5BE0AC00CE7523 /* Headers */,
+				8EF716B11B5BE0AC00CE7523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PKLormappingSwift;
+			productName = PKLormappingSwift;
+			productReference = 8EF716B31B5BE0AC00CE7523 /* PKLormappingSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EF716BC1B5BE0AD00CE7523 /* PKLormappingSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EF716CB1B5BE0AD00CE7523 /* Build configuration list for PBXNativeTarget "PKLormappingSwiftTests" */;
+			buildPhases = (
+				8EF716B91B5BE0AD00CE7523 /* Sources */,
+				8EF716BA1B5BE0AD00CE7523 /* Frameworks */,
+				8EF716BB1B5BE0AD00CE7523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EF716C01B5BE0AD00CE7523 /* PBXTargetDependency */,
+			);
+			name = PKLormappingSwiftTests;
+			productName = PKLormappingSwiftTests;
+			productReference = 8EF716BD1B5BE0AD00CE7523 /* PKLormappingSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E68AE4E1B352001002F7F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = packy;
+				TargetAttributes = {
+					8E68AE561B352001002F7F77 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8E68AE601B352001002F7F77 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8EF716B21B5BE0AC00CE7523 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8EF716BC1B5BE0AD00CE7523 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 8E68AE511B352001002F7F77 /* Build configuration list for PBXProject "PKLormapping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E68AE4D1B352001002F7F77;
+			productRefGroup = 8E68AE581B352001002F7F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E68AE561B352001002F7F77 /* PKLormapping */,
+				8E68AE601B352001002F7F77 /* PKLormappingTests */,
+				8EF716B21B5BE0AC00CE7523 /* PKLormappingSwift */,
+				8EF716BC1B5BE0AD00CE7523 /* PKLormappingSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E68AE551B352001002F7F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E68AE5F1B352001002F7F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716B11B5BE0AC00CE7523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716BB1B5BE0AD00CE7523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E68AE521B352001002F7F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E68AE821B3537B9002F7F77 /* PKQueryPage.m in Sources */,
+				8E85ACE71B39726000D6CE9A /* PKClassBean.m in Sources */,
+				8EECB2E11B3D532100BEBC19 /* PKUnitCommon.m in Sources */,
+				8EECB2EA1B3D542300BEBC19 /* PKMappingCategory.m in Sources */,
+				8E68AE951B359121002F7F77 /* PKBaseEntityCategory.m in Sources */,
+				8EECB2F01B3D543200BEBC19 /* PKAccessThread.m in Sources */,
+				8E85ACDF1B394AC500D6CE9A /* PKCharacterOperate.m in Sources */,
+				8E68AE7A1B352185002F7F77 /* PKHQLer.m in Sources */,
+				8E575B731B3E9DF500FDA80E /* PKArray.m in Sources */,
+				8EECB2F71B3D543D00BEBC19 /* PKMapping.m in Sources */,
+				8E85ACEB1B3973B700D6CE9A /* PKTableBean.m in Sources */,
+				8E575B741B3E9DF500FDA80E /* PKMultipleEntityBean.m in Sources */,
+				8EECB2FC1B3D545C00BEBC19 /* PKSQLite.m in Sources */,
+				8EECB2F31B3D543200BEBC19 /* PKAccessTarget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E68AE5D1B352001002F7F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E68AE671B352001002F7F77 /* PKLormappingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716AE1B5BE0AC00CE7523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF716DE1B5BE17900CE7523 /* PKMapAttributeBean.swift in Sources */,
+				8EF716D31B5BE16100CE7523 /* PKQueryPage.swift in Sources */,
+				8EF716E41B5BE19E00CE7523 /* PKSQLite.swift in Sources */,
+				8EF716D91B5BE16B00CE7523 /* PKMapping.swift in Sources */,
+				8EF716E21B5BE19800CE7523 /* PKDataBaseAccess.swift in Sources */,
+				8EF716E01B5BE19000CE7523 /* PKCharacterOperate.swift in Sources */,
+				8EF716DA1B5BE16B00CE7523 /* PKArray.swift in Sources */,
+				8EF716D41B5BE16100CE7523 /* PKHQLer.swift in Sources */,
+				8EF716DC1B5BE16B00CE7523 /* PKDateUnit.swift in Sources */,
+				8EF716DB1B5BE16B00CE7523 /* PKExtensionCommon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF716B91B5BE0AD00CE7523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF716C51B5BE0AD00CE7523 /* PKLormappingSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E68AE641B352001002F7F77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E68AE561B352001002F7F77 /* PKLormapping */;
+			targetProxy = 8E68AE631B352001002F7F77 /* PBXContainerItemProxy */;
+		};
+		8EF716C01B5BE0AD00CE7523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EF716B21B5BE0AC00CE7523 /* PKLormappingSwift */;
+			targetProxy = 8EF716BF1B5BE0AD00CE7523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8E68AE691B352001002F7F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E68AE6A1B352001002F7F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E68AE6C1B352001002F7F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PKLormapping/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.packy.PKLormapping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E68AE6D1B352001002F7F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PKLormapping/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.packy.PKLormapping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8E68AE6F1B352001002F7F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PKLormappingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.packy.PKLormappingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E68AE701B352001002F7F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PKLormappingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.packy.PKLormappingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8EF716C61B5BE0AD00CE7523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = PKLormappingSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8EF716C71B5BE0AD00CE7523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PKLormappingSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8EF716C81B5BE0AD00CE7523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = PKLormappingSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EF716C91B5BE0AD00CE7523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PKLormappingSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E68AE511B352001002F7F77 /* Build configuration list for PBXProject "PKLormapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E68AE691B352001002F7F77 /* Debug */,
+				8E68AE6A1B352001002F7F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E68AE6B1B352001002F7F77 /* Build configuration list for PBXNativeTarget "PKLormapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E68AE6C1B352001002F7F77 /* Debug */,
+				8E68AE6D1B352001002F7F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E68AE6E1B352001002F7F77 /* Build configuration list for PBXNativeTarget "PKLormappingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E68AE6F1B352001002F7F77 /* Debug */,
+				8E68AE701B352001002F7F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EF716CA1B5BE0AD00CE7523 /* Build configuration list for PBXNativeTarget "PKLormappingSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF716C61B5BE0AD00CE7523 /* Debug */,
+				8EF716C71B5BE0AD00CE7523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EF716CB1B5BE0AD00CE7523 /* Build configuration list for PBXNativeTarget "PKLormappingSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EF716C81B5BE0AD00CE7523 /* Debug */,
+				8EF716C91B5BE0AD00CE7523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E68AE4E1B352001002F7F77 /* Project object */;
+}
